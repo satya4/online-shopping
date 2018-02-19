@@ -9,10 +9,24 @@ public class PageController {
 	
 	@RequestMapping(value={"/","/home","/index"})
 	public String index(Model model){
-		model.addAttribute("greeting", "Welcome to Spring MVC");
+		model.addAttribute("title", "Home");
+		model.addAttribute("userClickHome", true);
 		return "page";
 	}
 	
+	@RequestMapping(value="/about")
+	public String about(Model model){
+		model.addAttribute("title", "About Us");
+		model.addAttribute("userClickAbout", true);
+		return "page";
+	}
 	
+	@RequestMapping(value="/contact")
+	public String contact(Model model){
+		model.addAttribute("title", "Contact Us");
+		model.addAttribute("userClickContact", true);
+		return "page";
+	}
+
 
 }
