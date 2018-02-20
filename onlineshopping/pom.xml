@@ -14,9 +14,14 @@
 	</properties>
 	<dependencies>
 
-		<!-- JAVA EE API -->
+		<!-- Link backend project -->
+		<dependency>
+			<groupId>com.app</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+		<!-- JAVA EE API -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
